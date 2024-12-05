@@ -1,6 +1,6 @@
 # verificationbot
 
-ENG Lang
+# **ENG Lang**
 
 Verification bot with modal windows.
 
@@ -18,7 +18,7 @@ Telegram @fuckrehabs
 Discord vixlencqqe
 
 
-RUS Lang
+# **RUS Lang**
 
 
 бот написанный на библиотеке discord.py

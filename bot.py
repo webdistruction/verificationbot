@@ -10,9 +10,9 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="/", intents=intents)
 
-verification_channel_id = 1313915216211214476  # ID канала верификации
-moderation_channel_id = 1313942674868539494  # ID канала для модерации заявок
-verified_role_id = 1235793128527626272       # ID роли верифицированного пользователя
+verification_channel_id = 1  # ID канала верификации
+moderation_channel_id = 1  # ID канала для модерации заявок
+verified_role_id = 1       # ID роли верифицированного пользователя
 
 class VerificationModal(Modal, title="Верификация"):
     name = TextInput(label="Ваше имя", placeholder="Как вас зовут?", required=True)
@@ -108,4 +108,4 @@ async def on_interaction(interaction: discord.Interaction):
 async def test_command(interaction: discord.Interaction):
     await interaction.response.send_message("Команда выполнена успешно!", ephemeral=True)
 
-bot.run('MTMxMzU0NDg5ODQ4NTU1NTM3Mg.GNAuwX.8fWEKxXbxTYLB4JpkZHhRmXwFkXwTIuDXWY0T8')  # Замените 'YOUR_BOT_TOKEN_HERE' на ваш токен бота           
+bot.run('TOKEN')  # Замените 'YOUR_BOT_TOKEN_HERE' на ваш токен бота           
